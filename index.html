@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>aagaman 2k15</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+	  font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  
+     background: url(bg.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+   }
+
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 5px;      
+      font-size: 25px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      /*-webkit-filter: grayscale(90%);
+      filter: grayscale(90%);  make all photos black and white */ 
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 450px;
+  }  
+  .navbar {
+	  font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.7;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">aagaman 2k15</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">WELCOME!</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#more">MORE</a></li>
+        <li><a href="#details">DETAILS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="slide1.jpg" alt="slide1" width="100%" height="700">
+        <div class="carousel-caption">
+          <img src="logo.png" alt="aagaman 2k15" width="330" height="400"></br></br></br></br>
+	<p>presented by</p>  
+	<h2>Techno India College Of Technology</h2></br></br>
+	</div>      
+      </div>
+
+      <div class="item">
+        <img src="slide2.jpg" alt="slide2" width="100%" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="slide3.jpg" alt="slide3" width="100%" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="slide4.jpg" alt="slide4" width="100%" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="slide5.jpg" alt="slide5" width="100%" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+</div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Events Section) -->
+<div id="events" class="container text-center">
+  <h2>THE EVENTS</h2>
+  <p><em>Make the most out of today or worry about it all tomorrow!</em></p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>TICT's Got Talent</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="talent.jpg" class="img-circle person" alt="TICT's Got Talent" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p><blockquote>Do you have it ?</blockquote></p>
+        <p>Burn the stage and awe the audience!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Dance</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="dance.jpg" class="img-circle person" alt="Dance" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p><blockquote>Dance is the hidden language of the soul.</blockquote></p>
+        <p>Show us your moves. Dance like nobody's watching!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Singing</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="singing.jpg" class="img-circle person" alt="Singing" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p><blockquote>Life is a song. Sing it!</blockquote></p>
+        <p>Sing your heart out.</p>
+      </div>
+    </div>
+<div class="col-sm-4">
+      <p class="text-center"><strong>Debate</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="debate.jpg" class="img-circle person" alt="Debate" width="255" height="255">
+      </a>
+      <div id="demo4" class="collapse">
+        <p><blockquote>Cometh the hour</br>Cometh the man</blockquote></p>
+        <p>For or against? Start jotting down the points..</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Extempore</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+        <img src="extempore.jpg" class="img-circle person" alt="Extempore" width="255" height="255">
+      </a>
+      <div id="demo5" class="collapse">
+        <p><blockquote>Spontaneity is a secret ingredient!</blockquote></p>
+        <p>An impromptu speech is intended to reveal the ability to develop a point of view on a general topic and to organize a presentation within limited preparation time. Judges will be looking for clarity of thought, logical organization, sincerity and the effective use of plain English</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Quiz</strong></p><br>
+      <a href="#demo6" data-toggle="collapse">
+        <img src="quiz.jpg" class="img-circle person" alt="Quiz" width="255" height="255">
+      </a>
+      <div id="demo6" class="collapse">
+        <p><blockquote>Run your brain and be the first one to answer. All the best!</blockquote></p>
+        <p>Each team will consist of 2 members.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Mr. & Ms. Freshers</strong></p><br>
+      <a href="#demo7" data-toggle="collapse">
+        <img src="mmf.jpg" class="img-circle person" alt="Mr. & Ms. Freshers" width="255" height="255">
+      </a>
+      <div id="demo7" class="collapse">
+        <p><blockquote>There will be <strong>three (3)</strong> rounds:</blockquote></p>
+        <p>~ Introduction - By now the freshers are well acquainted with 'Intro'. In this round the participants introduce themselves.<br>
+	   ~ Talent Round - In this round the participants impress us by their talent. Singing, dancing, recitation, acting etc.<br>
+	   ~ Q/A Round    - The participants face intellectual or tricky questions and answer as fast as possible.
+</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Container (More Section) -->
+<div id="more" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">MORE</h3>
+    <p class="text-justify">We the students of Techno India College of Technology are giving out an evening for our beloved juniors. To be hosted on 6th November, 2015 at Eastern Zonal Cultural Centre, Salt Lake City, Kolkata, West bengal, AAGAMAN 2k15, promises to blow your mind in every aspect. Long hours of discussions, hard-work, practice,and everything sums up the <a href="#events">events</a>. Dance, drama, band performances, talent round, Quiz, debate and what not- all packed up beautiful into an evening which will make you go gaga!<br><br></p>
+    
+    <!--
+     <ul class="list-group">
+      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+    </ul>
+     -->
+    
+
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="paris.jpg" alt="bandname" width="400" height="300">
+          <p><strong>Headlining Act</strong></p>
+          <p>Guest Band : Name</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Know More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-asterisk"></span> Headlining Act <span class="glyphicon glyphicon-asterisk"></span> </h4>
+        </div>
+        <div class="modal-body">
+        
+
+        </div>
+        <div class="modal-footer">
+          
+          <p>Visit <a href="#">Band</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Details (Details Section) -->
+<div id="details" class="container">
+  <br>
+  <h3 class="text-center">OTHER DETAILS</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><h3>When ?</h3></a></li>
+    <li><a data-toggle="tab" href="#menu1"><h3>Where ?</h3></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Date and time : To be updated</h2>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2><strong>Eastern Zonal Cultural Centre</strong></h2></br>
+      <p>Eastern Zonal Cultural Centre, </br>Broadway Rd, IB Block, Sector III, </br>Salt Lake City, Kolkata, </br>West Bengal 700106</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="googleMap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.160850071214!2d88.41084751495957!3d22.573086585182487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ce4dbd19f5%3A0xe5cdf107373bf844!2sEastern+Zonal+Cultural+Centre%2C+Broadway+Rd%2C+IB+Block%2C+Sector+III%2C+Salt+Lake+City%2C+Kolkata%2C+West+Bengal+700106!5e0!3m2!1sen!2sin!4v1446362568794"  width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>&copy aagaman 2k15. Site by <a href="https://www.facebook.com/soumodips" data-toggle="tooltip" title="View in Facebook" target="blank">Soumodip Sinha</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>
